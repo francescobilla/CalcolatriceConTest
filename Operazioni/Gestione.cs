@@ -7,9 +7,13 @@ namespace Operazioni
 
         public static int Somma(int a, int b)
         {
-            int somma = a + b;
 
-            return somma;
+            return a+b;
+        }
+        public static double Differenza(double a, double b)
+        {
+
+            return a-b;
         }
     }
 }

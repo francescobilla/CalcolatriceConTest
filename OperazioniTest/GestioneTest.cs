@@ -16,6 +16,7 @@ namespace OperazioniTest
             somma_effettiva = Gestione.Somma(a, b);
             Assert.AreEqual(somma_aspettata, somma_effettiva);
         }
+        [TestMethod]
         public void TestSommaNulli()
         {
             int a = 0;
@@ -25,7 +26,28 @@ namespace OperazioniTest
             somma_effettiva = Gestione.Somma(a, b);
             Assert.AreEqual(somma_aspettata, somma_effettiva);
         }
+        [TestMethod]
         public void TestSommaNegativi()
+        {
+            int a = -3;
+            int b = -2;
+            int somma_aspettata = -5;
+            int somma_effettiva;
+            somma_effettiva = Gestione.Somma(a, b);
+            Assert.AreEqual(somma_aspettata, somma_effettiva);
+        }
+        [TestMethod]
+        public void TestSottrazioneNegativiDouble()
+        {
+            double a = -3;
+            double b = -2;
+            double somma_aspettata = -5;
+            double somma_effettiva;
+            somma_effettiva = Gestione.Differenza(a, b);
+            Assert.AreEqual(somma_aspettata, somma_effettiva);
+        }
+        [TestMethod]
+        public  void TestSottrazioneNegativi()
         {
             int a = -3;
             int b = -2;
